@@ -1,0 +1,41 @@
+{
+  "name": "sustainable-cities-backend",
+  "version": "1.0.0",
+  "description": "Backend for sustainable cities app with alert reporting, government guide, travel assistant, and dashboard APIs.",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "lint": "eslint . --ext .js",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "sustainable",
+    "cities",
+    "backend",
+    "node",
+    "express"
+  ],
+  "author": "Infinite Paradox",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.6.1",
+    "morgan": "^1.10.0",
+    "socket.io": "^4.8.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.3.0",
+    "nodemon": "^3.0.1"
+  }
+}
