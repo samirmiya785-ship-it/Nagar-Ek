@@ -2,10 +2,10 @@
   "name": "sustainable-cities-backend",
   "version": "1.0.0",
   "description": "Backend for sustainable cities app with alert reporting, government guide, travel assistant, and dashboard APIs.",
-  "main": "server.js",
+  "main": "../server.js",
   "scripts": {
-    "dev": "nodemon server.js",
-    "start": "node server.js",
+    "dev": "nodemon ../server.js",
+    "start": "node ../server.js",
     "lint": "eslint . --ext .js",
     "prepare": "husky install"
   },
