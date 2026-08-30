@@ -8,8 +8,8 @@ const userSchema = new mongoose.Schema(
     password: { type: String, required: true },
     points: { type: Number, default: 0 },
     location: {
-      type: { type: String, enum: ["Point"], default: "Point" },
-      coordinates: { type: [Number], default: [0, 0] },
+      type: { type: String, enum: ["Point", null], default: null },
+      coordinates: { type: [Number], default: [] },
     },
   },
   { timestamps: true },
@@ -18,4 +18,3 @@ const userSchema = new mongoose.Schema(
 userSchema.index({ location: "2dsphere" });
 
 module.exports = mongoose.model("User", userSchema);
-  
