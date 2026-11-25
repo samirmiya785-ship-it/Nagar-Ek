@@ -4,10 +4,16 @@ Backend for the sustainable cities app with alert reporting, government office g
 
 ## Setup
 
-1. Navigate to `backend`
-2. Run `npm install`
-3. Copy `.env.example` to `.env` and set values
-4. Run `npm run dev`
+1. Navigate to `backend`.
+2. Create a `.env` file in that directory (repository path `backend/.env`) with `MONGODB_URI` and `JWT_SECRET`. `PORT` is optional and defaults to `4000`.
+3. Install dependencies and start the API:
+
+   ```bash
+   npm install
+   npm run dev
+   ```
+
+Swagger API docs are available at `http://localhost:4000/api/docs`.
 
 > This backend no longer depends on Google Maps or Google geocoding. Use OpenStreetMap/Leaflet and generic OSM-compatible geocoding providers for frontend mapping, POI visualization, and address lookup.
 
