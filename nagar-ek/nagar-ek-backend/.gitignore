@@ -1,0 +1,8 @@
+node_modules
+.env
+.env.*
+dist
+
+# Added by ggshield
+.cache_ggshield
+

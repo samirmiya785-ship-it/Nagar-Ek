@@ -1,0 +1,14 @@
+# Dependencies and generated output
+node_modules/
+**/node_modules/
+.expo/
+**/.expo/
+dist/
+web-build/
+*.tsbuildinfo
+**/.cache_ggshield
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example

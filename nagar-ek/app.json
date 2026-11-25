@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "nagar-ek",
+    "slug": "nagar-ek",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "nagarek",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "icon": "./assets/expo.icon"
+    },
+    "android": {
+      "icon": "./assets/images/logo/nagarek-logo-png1.png",
+      "permissions": [
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION"
+      ],
+      "package": "com.ranbir111.nagarek"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#7afffa",
+          "image": "./assets/images/logo/nagarek-logo-png1.png",
+          "imageWidth": 76
+        }
+      ],
+      "expo-secure-store",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Nagar Ek to use your location to find nearby government offices.",
+          "locationWhenInUsePermission": "Allow Nagar Ek to use your location to find nearby government offices."
+        }
+      ],
+      "expo-notifications"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "81a21364-3c58-4d90-aba4-cb2223c62afb"
+      }
+    }
+  }
+}
